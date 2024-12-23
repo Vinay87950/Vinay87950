@@ -9,7 +9,7 @@
 
 
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*78_SldhCTCjG3oNwjQqj9w.gif" width="500"/>
+<img src="https://miro.medium.com/v2/resize:fit:1280/format:webp/1*du4OtSR2JuvP_4hkN1iNeA.gif" width="800"/>
 
 
 # 📊 GitHub Stats:

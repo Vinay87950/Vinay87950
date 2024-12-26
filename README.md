@@ -1,7 +1,7 @@
 ## Servus 👋
 # 💫 Über mich:
 🧠 Ich vertiefe mich derzeit intensiv in die Künstliche Intelligenz und erkunde faszinierende Projekte im Bereich KI und Deep Learning.
-<br>🤖 Ich bin begeistert von neuronalen Netzwerken, großen Sprachmodellen (LLMs) und ihrem transformativen Potenzial.
+<br>🤖 Ich bin begeistert von Neural Network, Large Language Models (LLMs) und ihrem transformativen Potenzial.
 <br>🎮 Aktuell beschäftige ich mich mit Reinforcement Learning und genieße die Herausforderung, intelligente Agenten für Spiele oder Aufgaben zu entwickeln.
 <br>🌱 Ich bin leidenschaftlich daran interessiert, kontinuierlich zu lernen und stets auf dem neuesten Stand der KI-Trends zu bleiben
 <br>🎉 Fun fact:  Ich glaube, dass Programmieren wie Magie ist - besonders wenn man versucht, von GPT generierten Code zu entschlüsseln!

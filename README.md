@@ -1,10 +1,10 @@
 ## Servus 👋
 # 💫 Über mich:
-🧠 Ich vertiefe mich derzeit intensiv in die Künstliche Intelligenz und erkunde faszinierende Projekte im Bereich Deep Learning.
-<br>🤖 Ich bin begeistert von Neural Network, Large Language Models (LLMs) und ihrem transformativen Potenzial.
-<br>🎮 Aktuell beschäftige ich mich mit Reinforcement Learning und genieße die Herausforderung, intelligente Agenten für Spiele oder Aufgaben zu entwickeln.
-<br>🌱 Ich bin leidenschaftlich daran interessiert, kontinuierlich zu lernen und stets auf dem neuesten Stand der KI-Trends zu bleiben
-<br>🎉 Fun fact:  Ich glaube, dass Programmieren wie Magie ist - besonders wenn man versucht, von GPT generierten Code zu entschlüsseln!
+🧠 I'm absolutely fascinated by Artificial Intelligence and have been diving deep into various exciting Deep Learning projects lately. The whole field just amazes me!
+<br>🤖 Large Language Models (LLMs) are my current obsession - I can't stop thinking about how they're reshaping our world. It's mind-blowing stuff, really.
+<br>🎮 These days, I'm getting my hands on with Reinforcement Learning. There's something incredibly satisfying about teaching AI agents to master games and solve complex tasks. It's like watching a digital brain grow up!
+<br>🌱 I'm one of those people who can't stop learning - always chasing the latest AI developments and trying to stay ahead of the curve. It's not just work for me; it's genuine passion.
+<br>🎉 Fun fact: Just a tech enthusiast trying to make sense of this fascinating AI world, one line of code at a time
 
 
 # 💻 Tech Stack:

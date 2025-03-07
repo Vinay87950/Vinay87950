@@ -1,7 +1,7 @@
 ## Servus 👋
 # 💫 Über mich:
 🧠 I'm absolutely fascinated by Artificial Intelligence and have been diving deep into various exciting Deep Learning projects lately. The whole field just amazes me!
-<br>🤖 Agentic AI are my current obsession - I can't stop thinking about how they're reshaping the world. 
+<br>🤖 Agentic AI are my current obsession - amazed by how they're reshaping the world. 
 <br>🎮 These days, I'm getting my hands on with Reinforcement Learning. There's something incredibly satisfying about teaching AI agents to master the unknown environments and solve complex tasks.
 <br>🌱 I'm one of those people who can't stop learning - always chasing the latest AI developments and trying to stay ahead of the curve. It's not just work for me; it's genuine passion.
 <br>🎉 Fun fact: Just a tech enthusiast trying to make sense of this fascinating AI world, one line of code at a time

@@ -1,8 +1,7 @@
 ## Servus 👋
 # 💫 Über mich:
 🧠 I'm absolutely fascinated by Artificial Intelligence and have been diving deep into various exciting Deep Learning projects lately. The whole field just amazes me!
-<br>🎮 I'm getting my hands on with Reinforcement Learning and LLM's for solving complex robotic based task. 
-<br>🌱 I'm one of those people who can't stop learning - always chasing the latest AI developments and trying to stay ahead of the curve.
+<br>🎮 Exploring LLMs, feels like running a mixture-of-experts in my head, where every neuron has a different opinion on the task.
 <br>🎉 Fun fact: Just a tech enthusiast trying to make sense of this fascinating AI world, one line of code at a time using ChatGpt.
 
 

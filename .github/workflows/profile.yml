@@ -1,0 +1,99 @@
+# Regenerates every stats card in this repo so the README never depends on
+# rate-limited public servers (github-readme-stats.vercel.app / herokuapp).
+#
+# Runs daily, on manual trigger (Actions → "✨ Refresh profile cards" → Run workflow),
+# and once automatically when this file is pushed.
+#
+# Optional: add a classic PAT (scopes: repo, read:user) as the repository secret
+# PROFILE_PAT to include private-repo activity. Without it, public data is used.
+
+name: ✨ Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # every day ~05:17 Berlin time
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+env:
+  # shared "neural night" palette (hex without #)
+  BG: "135,0B0E1F,121636,1A1238"
+  TITLE: "C4B5FD"
+  TEXT: "C9D1F2"
+  ICON: "22D3EE"
+  RING: "F472B6"
+  BORDER: "2E3766"
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: 📊 Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: stats
+          options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=default&border_radius=14&card_width=470&custom_title=Vinay%20%C2%B7%20GitHub%20Stats&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&icon_color=${{ env.ICON }}&ring_color=${{ env.RING }}&border_color=${{ env.BORDER }}"
+          path: profile/stats.svg
+          token: ${{ secrets.PROFILE_PAT || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true" # keep yesterday's card instead of writing an error card
+
+      - name: 🧬 Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&card_width=360&border_radius=14&size_weight=0.5&count_weight=0.5&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&border_color=${{ env.BORDER }}"
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_PAT || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: 🔥 Streak card
+        uses: DenverCoder1/github-readme-streak-stats@main
+        continue-on-error: true
+        with:
+          options: "user=${{ github.repository_owner }}&timezone=Europe/Berlin&border_radius=14&background=${{ env.BG }}&border=${{ env.BORDER }}&stroke=${{ env.BORDER }}&ring=A78BFA&fire=${{ env.RING }}&currStreakNum=FFFFFF&sideNums=E8EBF8&currStreakLabel=${{ env.ICON }}&sideLabels=${{ env.TITLE }}&dates=8B93BA"
+          path: profile/streak.svg
+          token: ${{ secrets.PROFILE_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: 🐍 Contribution snake
+        uses: Platane/snk/svg-only@v3
+        continue-on-error: true
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-dark.svg?palette=github-dark&color_snake=#F472B6&color_dots=#161b22,#2e1065,#5b21b6,#8b5cf6,#c4b5fd
+            profile/snake-light.svg?palette=github-light&color_snake=#DB2777&color_dots=#ebedf0,#ddd6fe,#a78bfa,#7c3aed,#4c1d95
+
+      - name: 🏙️ 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_PAT || secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: 💾 Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for d in profile profile-3d-contrib; do
+            if [ -d "$d" ]; then git add "$d"; fi
+          done
+          if git diff --cached --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile cards"
+          git pull --rebase --autostash
+          git push

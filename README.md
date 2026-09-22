@@ -5,7 +5,8 @@
 ## Servus 👋
 
 # 💫 Über mich:
-Ich bin tief leidenschaftlich und begeistert von der Welt der KI und des Deep Learnings. Meine Reise begann mit einem starken Interesse an der Informatik und entwickelte sich zu einer tiefen Leidenschaft für die Entwicklung komplexer Algorithmen und das Verstehen neuronaler Netzwerke. Was mich an diesem Feld am meisten fasziniert, ist seine unglaubliche Fähigkeit, die Art und Weise, wie wir Menschen mit Computern interagieren und wie Computer die Welt um uns herum verstehen, grundlegend zu verändern. Das Entwerfen, Entwickeln und Optimieren von Modellen des maschinellen Lernens und das Forschen an neuen Ansätzen in der KI sind meine Kernbeschäftigungen, die mich täglich inspirieren und motivieren.
+🧠 I'm absolutely fascinated by Artificial Intelligence and have been diving deep into various exciting Deep Learning projects lately. The whole field just amazes me!
+<br>🎮 Exploring LLMs, feels like running a mixture-of-experts in my head, where every neuron has a different opinion on the task.
 
 <div align="center">
   <img src="assets/divider.svg" width="100%" alt=""/>

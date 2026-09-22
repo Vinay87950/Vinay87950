@@ -2,7 +2,6 @@
 # 💫 Über mich:
 🧠 I'm absolutely fascinated by Artificial Intelligence and have been diving deep into various exciting Deep Learning projects lately. The whole field just amazes me!
 <br>🎮 Exploring LLMs, feels like running a mixture-of-experts in my head, where every neuron has a different opinion on the task.
-<br>🎉 Fun fact: Just a tech enthusiast trying to make sense of this fascinating AI world, one line of code at a time using ChatGpt.
 
 
 # 💻 Tech Stack:
